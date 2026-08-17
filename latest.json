@@ -1,11 +1,11 @@
 {
-  "version": "0.3.4",
-  "publishedAt": "2026-08-17T01:03:40Z",
-  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.4.bin",
-  "size": 1372384,
-  "sha256": "813fe28c8d3d169af47a870ff70f43d58413a35fb4573e7ea8c3674af51f90df",
-  "signature": "MEQCIAYi/mEmafByXv0x/8tLvEeQopfnRDhJ59joAjlJ7XloAiBeESv2YmUW8HSWcl6Thn8mb/TyH2kgA2BtFUDJeE7OzQ==",
+  "version": "0.3.5",
+  "publishedAt": "2026-08-17T01:10:31Z",
+  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.5.bin",
+  "size": 1372368,
+  "sha256": "d80129145bd0b1007d7b53db7e683e9c7bc73ccef3b20dd813f1cc6464a01c57",
+  "signature": "MEYCIQCRiWO35q6glYfpJ3Wmlp5ud+jhZ3Xu6xVDlwQTFvbpzQIhALQ4NTNjeLD64OIrFkctuQI2oBuF5M/xaaOKWAonlWNb",
   "notes": [
-    "Firmware bom. Substitui a 0.3.3, que era um ensaio e morria de proposito."
+    "O botao de atualizar agora deixa de recusar quando o radio esta apenas recebendo."
   ]
 }
