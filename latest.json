@@ -1,11 +1,11 @@
 {
-  "version": "0.3.2",
-  "publishedAt": "2026-08-17T00:44:32Z",
-  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.2.bin",
-  "size": 1372384,
-  "sha256": "69b9bf4897e6e6298cee39555402378b7f96c190bbe02daf9a7ae1547c2611a6",
-  "signature": "MEYCIQDvx1N2eX/3i5DUwhlbCuSh0g0K7UaW/sX7RdET+X9/kAIhAKhO0OM9e3zl++nCHbfXu92UUkekTAGXLLioV90m+nSR",
+  "version": "0.3.3",
+  "publishedAt": "2026-08-17T00:57:02Z",
+  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.3.bin",
+  "size": 1372640,
+  "sha256": "073c8228bacda2423212a22f30eaaeef3a1d5999a9c001ca96859aed6c5cdc75",
+  "signature": "MEUCIAjSsh+SZaGlWdSqpNLk8J8D9vUzr84KKUoO7Kge4eykAiEA5Dm8j45tPeY2hApj1j3c3hudNAa+xq8E79mjaTaqq5M=",
   "notes": [
-    "Download retomavel: uma queda de conexao nao obriga mais a comecar do zero."
+    "ENSAIO: este firmware morre de proposito aos 20 s. Publicado por poucos minutos para provar o retorno automatico."
   ]
 }
