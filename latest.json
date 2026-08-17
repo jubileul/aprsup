@@ -1,11 +1,11 @@
 {
-  "version": "0.3.3",
-  "publishedAt": "2026-08-17T00:57:02Z",
-  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.3.bin",
-  "size": 1372640,
-  "sha256": "073c8228bacda2423212a22f30eaaeef3a1d5999a9c001ca96859aed6c5cdc75",
-  "signature": "MEUCIAjSsh+SZaGlWdSqpNLk8J8D9vUzr84KKUoO7Kge4eykAiEA5Dm8j45tPeY2hApj1j3c3hudNAa+xq8E79mjaTaqq5M=",
+  "version": "0.3.4",
+  "publishedAt": "2026-08-17T01:03:40Z",
+  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.4.bin",
+  "size": 1372384,
+  "sha256": "813fe28c8d3d169af47a870ff70f43d58413a35fb4573e7ea8c3674af51f90df",
+  "signature": "MEQCIAYi/mEmafByXv0x/8tLvEeQopfnRDhJ59joAjlJ7XloAiBeESv2YmUW8HSWcl6Thn8mb/TyH2kgA2BtFUDJeE7OzQ==",
   "notes": [
-    "ENSAIO: este firmware morre de proposito aos 20 s. Publicado por poucos minutos para provar o retorno automatico."
+    "Firmware bom. Substitui a 0.3.3, que era um ensaio e morria de proposito."
   ]
 }
