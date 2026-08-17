@@ -1,11 +1,12 @@
 {
-  "version": "0.2.0",
-  "publishedAt": "2026-08-17T00:07:52Z",
-  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.2.0.bin",
-  "size": 1370384,
-  "sha256": "898c53ed94cd427372a4ecb3faa73fbde25bd1bdc0587d1230883462d5f4a097",
-  "signature": "MEUCIFfiXeNfzHAgwrm2Guhcy66k4/U54YQgNV/MOm4zv3gZAiEA4mncpziGtCmyTIm4qcZ/XBz5fhLE/N3YbtKtBfyTaSM=",
+  "version": "0.3.0",
+  "publishedAt": "2026-08-17T00:15:01Z",
+  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.0.bin",
+  "size": 1370912,
+  "sha256": "d6b83101b461bc747f20e5d2033100eab7dda06617fe74ea1bf33fd2975592b3",
+  "signature": "MEUCIHjMb5zvOnzXPvXHm6PHX1YFy17uFzAKChpIztg28hVgAiEAnbyFUI833QFYyoTO5tOBWkaMTGAUpNxDuBZRy6Uo4rg=",
   "notes": [
-    "Primeira publicacao. Mesma versao que ja esta nas placas: serve para conferir o caminho sem instalar nada."
+    "Atualizacao automatica pela internet, com assinatura e retorno automatico.",
+    "A busca bem-sucedida agora aparece no registro."
   ]
 }
