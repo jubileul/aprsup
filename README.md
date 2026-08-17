@@ -39,4 +39,10 @@ precisa ser confiável para o mecanismo ser seguro.
 ## Se você chegou aqui procurando o programa para gravar
 
 Não é este arquivo. Existe um instalador que faz tudo pelo cabo USB, e um manual
-com o passo a passo. Peça a quem lhe entregou a placa.
+com o passo a passo.
+
+## Interessado?
+
+Se você tem interesse na estação Multi-APRS, entre em contato:
+
+**pp5eal.dev@gmail.com**
