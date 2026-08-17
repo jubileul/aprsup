@@ -1,11 +1,11 @@
 {
-  "version": "0.3.0",
-  "publishedAt": "2026-08-17T00:16:27Z",
-  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.0.bin",
-  "size": 1370992,
-  "sha256": "441ec0d195aa922df57979d1737b7f2ca2a8c93de683bee872f1b8e1967703a7",
-  "signature": "MEQCIA3V1Gmy7XYD3KOOaLaooPmztcQqSsvWOEd+GNncY0YRAiB43mZRb7R7xkekfbn1J+vhR6ubjma1VoRoEgfdoIwl/g==",
+  "version": "0.3.1",
+  "publishedAt": "2026-08-17T00:30:51Z",
+  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.1.bin",
+  "size": 1371152,
+  "sha256": "c991a1d54f9abd92dd9742875e3c246e1dd4e926c39caea7378a8d9dce6e2418",
+  "signature": "MEYCIQD1VjNE3aDDTsTTOF8WU2fKrVJ1/74qps6r1K7ldVNQsAIhALGobgZsXzEc+UQhRZwZHXrkIbB91D5yF8UrraKQA3kJ",
   "notes": [
-    "Atualizacao automatica pela internet, com assinatura e retorno automatico."
+    "Corrige o download: a particao passa a ser apagada antes de abrir a conexao."
   ]
 }
