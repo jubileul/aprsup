@@ -1,10 +1,38 @@
 # aprsup
 
-Firmware publicado da estação Multi-APRS. Este repositório guarda **apenas
-artefatos** — o código-fonte fica em outro lugar e é privado.
+Firmware publicado da estação **Multi-APRS**.
 
-As placas em campo leem o `latest.json` daqui sozinhas e se atualizam quando
-sai versão nova.
+## O que é o Multi-APRS
+
+Uma estação APRS completa numa placa ESP32, ligada a qualquer rádio VHF por
+áudio e PTT. Ela faz **três funções, cada uma ligando e desligando por conta
+própria** — a mesma estação pode ser as três ao mesmo tempo:
+
+| Função | O que faz |
+| --- | --- |
+| **Tracker** | Transmite a própria posição, por GPS ou posição fixa, com beacon inteligente que acelera em movimento e economiza o canal parado |
+| **Digipeater** | Repete os pacotes de quem não alcança o destino sozinho, com controle de saltos e proteção contra repetir o mesmo pacote duas vezes |
+| **iGate** | Leva para a internet (APRS-IS) o que ouve no ar, e pode trazer de volta mensagens da internet para o rádio |
+
+Recebe e decodifica AFSK 1200 baud, AX.25 e Mic-E — inclusive posição, rumo,
+velocidade e símbolo de quem transmite.
+
+**Toda a configuração é feita pelo navegador**, numa página que mora dentro da
+própria placa: nada de aplicativo, nada de cabo depois da primeira gravação, nada
+de arquivo de configuração. Ela cria a própria rede Wi-Fi na primeira vez, e
+depois entra na rede da casa. A página fala **português e inglês**, e traz mapa
+com as estações ouvidas, registro de pacotes e ferramentas de ajuste do áudio.
+
+Ligada à internet, **a placa se atualiza sozinha** — é para isso que este
+repositório existe.
+
+---
+
+## Este repositório
+
+Guarda **apenas artefatos** de firmware. O código-fonte fica em outro lugar e é
+privado. As placas em campo leem o `latest.json` daqui sozinhas e se atualizam
+quando sai versão nova.
 
 ## O que tem aqui
 
