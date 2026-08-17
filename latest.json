@@ -6,6 +6,6 @@
   "sha256": "d80129145bd0b1007d7b53db7e683e9c7bc73ccef3b20dd813f1cc6464a01c57",
   "signature": "MEYCIQCRiWO35q6glYfpJ3Wmlp5ud+jhZ3Xu6xVDlwQTFvbpzQIhALQ4NTNjeLD64OIrFkctuQI2oBuF5M/xaaOKWAonlWNb",
   "notes": [
-    "O botao de atualizar agora deixa de recusar quando o radio esta apenas recebendo."
+    "The check-now button no longer refuses while the radio is merely receiving."
   ]
 }

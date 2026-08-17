@@ -1,76 +1,76 @@
 # aprsup
 
-Firmware publicado da estação **Multi-APRS**.
+Published firmware for the **Multi-APRS** station.
 
-## O que é o Multi-APRS
+## What Multi-APRS is
 
-Uma estação APRS completa numa placa ESP32, ligada a qualquer rádio VHF por
-áudio e PTT. Ela faz **três funções, cada uma ligando e desligando por conta
-própria** — a mesma estação pode ser as três ao mesmo tempo:
+A complete APRS station on one ESP32 board, connected to any VHF radio through
+audio and PTT. It performs **three roles, each switching on and off on its own**
+— the same station can be all three at once:
 
-| Função | O que faz |
+| Role | What it does |
 | --- | --- |
-| **Tracker** | Transmite a própria posição, por GPS ou posição fixa, com beacon inteligente que acelera em movimento e economiza o canal parado |
-| **Digipeater** | Repete os pacotes de quem não alcança o destino sozinho, com controle de saltos e proteção contra repetir o mesmo pacote duas vezes |
-| **iGate** | Leva para a internet (APRS-IS) o que ouve no ar, e pode trazer de volta mensagens da internet para o rádio |
+| **Tracker** | Transmits its own position, from GPS or a fixed location, with smart beaconing that speeds up while moving and spares the channel while parked |
+| **Digipeater** | Repeats packets from stations that cannot reach their destination alone, with hop control and protection against repeating the same packet twice |
+| **iGate** | Carries what it hears on the air to the internet (APRS-IS), and can bring messages back from the internet to RF |
 
-Recebe e decodifica AFSK 1200 baud, AX.25 e Mic-E — inclusive posição, rumo,
-velocidade e símbolo de quem transmite.
+It receives and decodes AFSK 1200 baud, AX.25 and Mic-E — including position,
+course, speed and symbol of whoever is transmitting.
 
-**Toda a configuração é feita pelo navegador**, numa página que mora dentro da
-própria placa: nada de aplicativo, nada de cabo depois da primeira gravação, nada
-de arquivo de configuração. Ela cria a própria rede Wi-Fi na primeira vez, e
-depois entra na rede da casa. A página fala **português e inglês**, e traz mapa
-com as estações ouvidas, registro de pacotes e ferramentas de ajuste do áudio.
+**Everything is configured from a browser**, on a page that lives inside the
+board itself: no app, no cable after the first flash, no configuration file. It
+creates its own Wi-Fi network the first time, then joins the house network. The
+page speaks **English and Portuguese**, and includes a map of the stations heard,
+a packet log, and audio adjustment tools.
 
-Ligada à internet, **a placa se atualiza sozinha** — é para isso que este
-repositório existe.
+Once it is on the internet, **the board updates itself** — which is what this
+repository is for.
 
 ---
 
-## Este repositório
+## This repository
 
-Guarda **apenas artefatos** de firmware. O código-fonte fica em outro lugar e é
-privado. As placas em campo leem o `latest.json` daqui sozinhas e se atualizam
-quando sai versão nova.
+Holds **artifacts only**. The source code lives elsewhere and is private.
+Stations in the field read the `latest.json` here on their own and update when a
+new version is published.
 
-## O que tem aqui
-
-| Arquivo | O que é |
+| File | What it is |
 | --- | --- |
-| `latest.json` | Manifesto: versão atual, endereço, tamanho, SHA-256 e assinatura |
-| `firmware-X.Y.Z.bin` | A imagem em si |
+| `latest.json` | Manifest: current version, address, size, SHA-256 and signature |
+| `firmware-X.Y.Z.bin` | The image itself |
 
-## Por que isto é público, se o código não é
+## Why this is public when the source is not
 
-Porque não há nada a esconder aqui. O binário **já está** gravado na placa de
-cada usuário, e sai de lá com o mesmo cabo USB que o gravou — publicá-lo não
-revela nada que quem tem uma placa já não tenha.
+Because there is nothing to hide here. The binary is **already** flashed onto
+every user's board, and it comes back out through the same USB cable that put it
+there — publishing it reveals nothing that anyone holding a board does not
+already have.
 
-A alternativa seria a placa autenticar num repositório privado, o que exigiria
-um token embutido no firmware. Um token embutido é um token público, pela mesma
-razão: a memória do ESP32 se lê com o cabo que a grava. E esse token daria acesso
-de leitura ao código-fonte inteiro. Separar os dois repositórios troca uma
-exposição que não custa nada por uma que custaria tudo.
+The alternative would be for the board to authenticate against a private
+repository, which would require a token embedded in the firmware. An embedded
+token is a public token, for the same reason: ESP32 memory is read with the cable
+that writes it. And that token would grant read access to the entire source. Two
+separate repositories trade an exposure that costs nothing for one that would
+cost everything.
 
-## Nada aqui é confiável por estar aqui
+## Nothing here is trusted for being here
 
-Cada imagem é assinada com ECDSA P-256, e a chave pública correspondente vem
-gravada dentro do firmware de cada placa. A placa **recalcula o SHA-256 da
-imagem enquanto grava** e confere a assinatura antes de dar a versão nova como
-boa. Uma imagem trocada, adulterada ou publicada por outra pessoa é recusada, e
-a estação segue funcionando na versão que já tinha.
+Every image is signed with ECDSA P-256, and the matching public key is built into
+each board's firmware. The board **recomputes the image's SHA-256 as it writes**
+and checks the signature before treating the new version as good. A swapped,
+tampered or third-party image is refused, and the station carries on running the
+version it already had.
 
-É por isso que este repositório poder ser público não é um risco: ele não
-precisa ser confiável para o mecanismo ser seguro.
+That is why this repository being public is not a risk: it does not need to be
+trusted for the mechanism to be safe.
 
-## Se você chegou aqui procurando o programa para gravar
+## If you came here looking for the program to flash
 
-Não é este arquivo. Existe um instalador que faz tudo pelo cabo USB, e um manual
-com o passo a passo.
+This is not that file. There is an installer that does everything over USB, and a
+manual with step-by-step instructions.
 
-## Interessado?
+## Interested?
 
-Se você tem interesse na estação Multi-APRS, entre em contato:
+If the Multi-APRS station is of interest to you, get in touch:
 
 **pp5eal.dev@gmail.com**
