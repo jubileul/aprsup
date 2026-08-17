@@ -1,11 +1,11 @@
 {
-  "version": "0.3.1",
-  "publishedAt": "2026-08-17T00:30:51Z",
-  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.1.bin",
-  "size": 1371152,
-  "sha256": "c991a1d54f9abd92dd9742875e3c246e1dd4e926c39caea7378a8d9dce6e2418",
-  "signature": "MEYCIQD1VjNE3aDDTsTTOF8WU2fKrVJ1/74qps6r1K7ldVNQsAIhALGobgZsXzEc+UQhRZwZHXrkIbB91D5yF8UrraKQA3kJ",
+  "version": "0.3.2",
+  "publishedAt": "2026-08-17T00:44:32Z",
+  "url": "https://raw.githubusercontent.com/jubileul/aprsup/main/firmware-0.3.2.bin",
+  "size": 1372384,
+  "sha256": "69b9bf4897e6e6298cee39555402378b7f96c190bbe02daf9a7ae1547c2611a6",
+  "signature": "MEYCIQDvx1N2eX/3i5DUwhlbCuSh0g0K7UaW/sX7RdET+X9/kAIhAKhO0OM9e3zl++nCHbfXu92UUkekTAGXLLioV90m+nSR",
   "notes": [
-    "Corrige o download: a particao passa a ser apagada antes de abrir a conexao."
+    "Download retomavel: uma queda de conexao nao obriga mais a comecar do zero."
   ]
 }
